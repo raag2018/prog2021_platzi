@@ -1,11 +1,16 @@
-var express = require('express');
-var app = express();
-app.get('/', inicio);
-app.get('/cursos', cursos);
-function inicio(peticion, resultado){
-	resultado.send("es este el home");
+//para importar modulos es con require
+var hhtp = require('http');//modulo de nucleo
+//permite ejecutar js del lado del servidor
+var server = http/createServer(function(request, response){
+	response.writeHead(200,{'Content-Type':'text/html'});
+	response.write('<html><body>hola</body></html>');
+	response.end();
+});
+
+server.listen(80);
+
+/*console.log("hello word");
+function sum(n1,n2){
+	return n1 + n2;
 }
-function cursos(peticion, resultado){
-	resultado.send("estos son los cursos ");
-}
-app.listen(80);
+console.log('sum> ' + sum(3,6));*/
