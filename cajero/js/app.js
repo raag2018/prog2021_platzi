@@ -59,10 +59,10 @@ function entregarDinero()
 		if (dinero == 0)
 		{
 			resultado.innerHTML += "Se ha retirado: <br />";
-			for(var e of dibujado)
-			{		
-				resultado.innerHTML += "<img src=" + e.imagen.src + " />";
-			}
+			//for(var e of dibujado)
+			//{		
+				resultado.innerHTML += "$" + parseInt(t.value) + "";
+			//}
 			resultado.innerHTML += "<hr />";
 		contar();	
 		}
