@@ -3,7 +3,7 @@ var http = require('http'); //modulo de nucleo
 //permite ejecutar js del lado del servidor
 var server = http.createServer(function(request, response) {
     response.writeHead(200, { 'Content-Type': 'text/html' });
-    response.write('<html><body>hola</body></html>');
+    response.write('<html><body>hola como estas</body></html>');
     response.end();
 });
 

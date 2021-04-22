@@ -1,0 +1,15 @@
+{
+  "name": "express",
+  "version": "1.0.0",
+  "description": "prueba de node",
+  "main": "servidor.js",
+  "scripts": {
+    "start": "node servidor.js",
+    "dev": "nodemon servidor.js"
+  },
+  "author": "Roberto Antonio Alferes Gomez",
+  "license": "ISC",
+  "dependencies": {
+  	"nodemon": "^2.0.6"
+  }
+}
